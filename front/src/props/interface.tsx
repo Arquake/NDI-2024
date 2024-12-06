@@ -1,3 +1,4 @@
+
 export interface WeatherData {
     temperature: number;
     condition: string;
@@ -8,4 +9,16 @@ export interface WeatherData {
 
 export interface GetMeteoApiCardProps {
     city: string;
+}
+export interface reponsesQuiz {
+    reponse: string;
+    correct: boolean;
+    isClicked: boolean;
+}
+
+export interface quizzProps {
+    organe: string;
+    subject: string;
+    question: string;
+    reponses: reponsesQuiz[];
 }
