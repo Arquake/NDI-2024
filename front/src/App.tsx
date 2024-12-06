@@ -5,6 +5,7 @@ import Lungs from './components/lungs'
 import Skin from './components/skin'
 import Blood from './components/blood'
 import Bones from './components/bones'
+import QuizzComponent from "./components/quizz.tsx";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Skin />
       <Blood />
       <Bones />
+        <QuizzComponent />
     </>
   )
 } 
