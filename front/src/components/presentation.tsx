@@ -15,7 +15,7 @@ export default function Presentation() {
 
                     <div className='py-8 w-1/3 container'>
                         <p>
-                            test
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit illum aliquid omnis itaque illo voluptatem, iure ducimus qui quae voluptatum quo cumque quam natus minima dolorem esse quas inventore molestias!
                         </p>
                     </div>
                 </div>

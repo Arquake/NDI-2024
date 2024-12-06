@@ -18,8 +18,8 @@ function App() {
       <Skin />
       <Blood />
       <Bones />
-        <QuizzComponent />
-        <Footer />
+      <QuizzComponent />
+      <Footer />
     </>
   )
 } 

@@ -3,3 +3,28 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
+.lungs {
+    background-image: url("/bg-poumons.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.skin {
+    background-image: url("/surface-eau.avif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.blood {
+    background-image: url("/sang-image.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bone {
+    background-image: url("/bone-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
