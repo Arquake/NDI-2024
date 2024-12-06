@@ -25,18 +25,17 @@ export function GetMeteoApiCard({ city }: GetMeteoApiCardProps) {
             });
     }, [city]);
 
-    return (
-        <div className="max-w-sm mt-10 p-6 bg-transparent rounded-lg">
-            <h2 className="text-xl font-bold text-center">Météo à {city}</h2>
+    return (    
+        <div className="max-w-sm mt-10 ml-10 p-6 bg-transparent rounded-lg">
+            <h2 className="text-xl font-bold">Météo à {city}</h2>
             {error ? (
-                <p className="text-red-500 text-center mt-4">{error}</p>
+                <p className="text-red-500 text-center">{error}</p>
             ) : weatherData ? (
                 <div className="mt-4">
-                    <p className="text-gray-700">🌡️ Température : <strong>{weatherData.temperature}°C</strong></p>
-                    <p className="text-gray-700">🌤️ Condition : <strong>{weatherData.condition}</strong></p>
-                    <p className="text-gray-700">💨 Vitesse du vent : <strong>{weatherData.windSpeed} km/h</strong></p>
-                    <p className="text-gray-700">🧭 Direction du vent : <strong>{weatherData.windDirection}</strong></p>
-                    <p className="text-gray-700">💧 Humidité : <strong>{weatherData.humidity}%</strong></p>
+                    <p className="text-gray-700">🌡️ <strong>{weatherData.temperature}°C</strong></p>
+                    <p className="text-gray-700">🌤️ <strong>{weatherData.condition}</strong></p>
+                    <p className="text-gray-700">💨 <strong>{weatherData.windSpeed} km/h</strong></p>
+                    <p className="text-gray-700">💧 <strong>{weatherData.humidity}%</strong></p>
                 </div>
             ) : (
                 <p className="text-gray-500 text-center mt-4">Chargement des données...</p>
