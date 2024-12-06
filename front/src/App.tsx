@@ -1,20 +1,14 @@
-import './App.css'
+import './App.css';
+import {GetMeteoApiCard} from './components/getMeteoApi';
 
 function App() {
 
-  return (
-    <>
-      <div className='min-h-screen'>
-        <div></div>
-        <h1>
-          Nuit de l'Info
-        </h1>
-        <h2>
 
-        </h2>
-      </div>
-      </>
-  )
+    return (
+        <>
+            <GetMeteoApiCard city={'Paris'} />
+        </>
+    );
 }
 
-export default App
+export default App;
