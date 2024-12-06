@@ -1,6 +1,7 @@
-import {GetMeteoApiCard} from './getMeteoApi';
+import { GetMeteoApiCard } from "./getMeteoApi";
 
-export default function Lungs() {
+
+export default function Bones() {
     return (
         <>
             <GetMeteoApiCard city={'Orléans'} />

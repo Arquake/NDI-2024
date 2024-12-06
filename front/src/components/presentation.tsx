@@ -19,8 +19,6 @@ export default function Presentation() {
                         </p>
                     </div>
                 </div>
-
-                
             </div>
         </>
     )
