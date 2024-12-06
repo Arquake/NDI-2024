@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './pres.css'
 
 export default function Presentation() {
@@ -10,8 +10,8 @@ export default function Presentation() {
                     <h1 className='text-4xl font-semibold text-blue-400 pb-4 text-center w-full'>
                         Nuit de l'Info
                     </h1>
-                    <img src="/logo.png" />
-                    <div className='py-8 w-1/3 container'>
+                    <img src="/logo.png" className='md:px-0 px-8'/>
+                    <div className='py-8 md:w-1/3 md:px-0 px-8 container'>
                         <p className='text-neutral-200'>
                         À propos de Race for Water
                         Créée en 2010 par Marco Simeoni, la Fondation Race for Water est une organisation pionnière dédiée à la préservation des océans et à la lutte contre les impacts de la pollution plastique. Avec ses Odyssées emblématiques à bord de navires révolutionnaires comme le futur MODX 70, un catamaran “zéro émission de CO₂”, la fondation explore des solutions concrètes pour protéger nos océans tout en sensibilisant le public à leur importance cruciale.

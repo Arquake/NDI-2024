@@ -15,10 +15,10 @@ export default function Heart() {
                         Le Coeur
                     </h1>
                     <h2 className='text-xl font-normal text-neutral-500  w-full'>
-                        <audio controls>
-                            <source src="p1.mp3" type="audio/mpeg" />
-                            Your browser does not support the audio element.
-                        </audio>
+                    <audio controls>
+                        <source src="/p1.mp3" type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                    </audio>
                     </h2>
                 </div>
 

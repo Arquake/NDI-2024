@@ -26,7 +26,7 @@ export function GetMeteoApiCard({ city }: GetMeteoApiCardProps) {
     }, [city]);
 
     return (    
-        <div className="max-w-sm mt-10 ml-10 p-6 bg-transparent rounded-lg">
+        <div className="max-w-sm md:mt-10 ml-10 p-6 bg-transparent rounded-lg">
             <h2 className="text-xl font-bold">Météo à {city}</h2>
             {error ? (
                 <p className="text-red-500 text-center">{error}</p>

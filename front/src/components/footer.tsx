@@ -20,9 +20,9 @@ export default function Footer(){
         ]
 
     return (
-        <footer className='h-16 bg-blue-700 text-white flex justify-center items-center mt-2'>
-            <p>Projet réalisé par :</p>
-            <div className='flex justify-between'>
+        <footer className='bg-blue-700 text-white flex md:flex-row flex-col md:pt-0 pt-2 justify-center items-center mt-2'>
+            <p className="underline">Projet réalisé par :</p>
+            <div className='flex md:flex-row flex-col gap-4 justify-between'>
                 {members.map((member, index) => (
                     <p key={index} className="m-2">{member.prenom} {member.nom}</p>
                 ))}
