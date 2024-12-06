@@ -189,45 +189,45 @@ export default function QuizzComponent(){
                         Recommencer
                     </button>
                     {isExploding && <ConfettiExplosion />}
-
                 </div>
-
-                ) : (
+            ) : (
                 <>
-                    <h1 className="text-center text-3xl font-bold mt-10 container">Quizz</h1>
-                    {quizz.map((quiz, questionIndex) => (
-                        <div
-                            key={questionIndex}
-                            className="max-w-sm mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg"
-                        >
-                            <h2 className="text-xl font-bold text-center">
-                                {quiz.organe} - {quiz.subject}
-                            </h2>
-                            <p className="text-gray-700 text-center mt-4">{quiz.question}</p>
-                            <div className="mt-4">
-                                {quiz.reponses.map((reponse, answerIndex) => (
-                                    <p key={answerIndex} className="text-gray-700">
-                                        <input
-                                            type="radio"
-                                            id={`${questionIndex}-${answerIndex}`}
-                                            name={`question-${questionIndex}`}
-                                            value={answerIndex}
-                                            checked={selectedAnswers[questionIndex] === answerIndex}
-                                            onChange={() =>
-                                                handleAnswerClick(questionIndex, answerIndex)
-                                            }
-                                        />
-                                        <label
-                                            htmlFor={`${questionIndex}-${answerIndex}`}
-                                            className="ml-2"
-                                        >
-                                            {reponse.reponse}
-                                        </label>
-                                    </p>
-                                ))}
+                    <h1 className="text-center text-3xl font-bold mt-10 container mb-6">Quizz</h1>
+                    <div className="grid grid-cols-2 gap-6 px-4">
+                        {quizz.map((quiz, questionIndex) => (
+                            <div
+                                key={questionIndex}
+                                className="max-w-sm p-6 bg-white shadow-lg rounded-lg"
+                            >
+                                <h2 className="text-xl font-bold">
+                                    {quiz.organe} - {quiz.subject}
+                                </h2>
+                                <p className="text-gray-700 text mt-4">{quiz.question}</p>
+                                <div className="mt-4">
+                                    {quiz.reponses.map((reponse, answerIndex) => (
+                                        <p key={answerIndex} className="text-gray-700">
+                                            <input
+                                                type="radio"
+                                                id={`${questionIndex}-${answerIndex}`}
+                                                name={`question-${questionIndex}`}
+                                                value={answerIndex}
+                                                checked={selectedAnswers[questionIndex] === answerIndex}
+                                                onChange={() =>
+                                                    handleAnswerClick(questionIndex, answerIndex)
+                                                }
+                                            />
+                                            <label
+                                                htmlFor={`${questionIndex}-${answerIndex}`}
+                                                className="ml-2"
+                                            >
+                                                {reponse.reponse}
+                                            </label>
+                                        </p>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                     <div className="mx-auto w-max">
                         <button
                             onClick={handleSubmit}
@@ -240,6 +240,7 @@ export default function QuizzComponent(){
             )}
         </div>
     );
+
 
 
 }
