@@ -5,7 +5,7 @@ export default function Presentation() {
 
     return (
         <>
-            <div className='h-screen bg-title'>
+            <div className='min-h-screen bg-title'>
                 <div className='flex flex-col justify-center items-center py-8'>
                     <h1 className='text-4xl font-semibold text-blue-400 pb-4 text-center w-full'>
                         Nuit de l'Info

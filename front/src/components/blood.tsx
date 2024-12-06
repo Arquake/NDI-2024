@@ -8,7 +8,7 @@ export default function Blood() {
                 <GetMeteoApiCard city={'Brest'} />
             </div>
             
-            <div className='h-screen blood grid grid-cols-2 gap-16 py-8 px-8 items-center justify-center'>
+            <div className='h-screen blood md:grid md:flex-none flex flex-col md:grid-cols-2 gap-16 py-8 px-8 items-center justify-center'>
                 <div className="justify-self-end bg-neutral-50 py-4 px-8 bg-opacity-80 shadow-xl rounded">
                     <h1 className='text-4xl font-semibold text-blue-700 pb-1 w-full'>
                         Le Sang

@@ -193,7 +193,7 @@ export default function QuizzComponent(){
             ) : (
                 <>
                     <h1 className="text-center text-3xl font-bold mt-10 container mb-6">Quizz</h1>
-                    <div className="grid grid-cols-2 gap-6 px-4">
+                    <div className="grid md:grid-cols-2 gap-6 px-4">
                         {quizz.map((quiz, questionIndex) => (
                             <div
                                 key={questionIndex}

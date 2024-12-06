@@ -7,7 +7,7 @@ export default function Lungs() {
             <GetMeteoApiCard city={'Queensland'} />
             </div>
             
-            <div className='h-screen lungs grid grid-cols-2 gap-16 py-8 px-8 items-center justify-center'>
+            <div className='h-screen lungs md:grid md:flex-none flex flex-col md:grid-cols-2 gap-16 py-8 px-8 items-center justify-center'>
                 <div className="justify-self-end bg-neutral-50 py-4 px-8 bg-opacity-80 shadow-xl rounded">
                     <h1 className='text-4xl font-semibold text-blue-700 pb-1 w-full'>
                         Les Poumons
